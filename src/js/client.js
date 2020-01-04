@@ -7,10 +7,13 @@ class Layout extends React.Component {
     return (
       <div>
         <h1>Hello {name} !</h1>
-        <p>sub title</p>
+        <p>1 + 1 = {this.get_result(1)}</p>
       </div>
     );
   }
+  get_result(num) {
+    return 1 + num;
+  };
 }
 
 const app = document.getElementById('app');
