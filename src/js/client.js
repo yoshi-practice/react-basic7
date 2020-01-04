@@ -5,10 +5,13 @@ class Layout extends React.Component {
   render() {
     let name = 'yoshi';
     return (
-      <h1>Hello {name} !</h1>
+      <div>
+        <h1>Hello {name} !</h1>
+        <p>sub title</p>
+      </div>
     );
   }
 }
 
 const app = document.getElementById('app');
-ReactDOM.render(<Layout/>, app);
+ReactDOM.render(<Layout />, app);
