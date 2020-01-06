@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+import Footer from './Footer'; 
+import Header from './Header';
 
 export default class Layout extends React.Component {
   constructor() {
@@ -6,8 +8,16 @@ export default class Layout extends React.Component {
     this.name = "yoshi";
   }
   render() {
+    const header = <Header />;
+    const footer = <Footer />;
+    const header_footer = [<Header />, <Footer />];
     return (
-      <h1>It's {this.name}!</h1>
+      <div>
+        {header}
+        <h1>It's {this.name}!</h1>
+        {footer}
+        {header_footer}
+      </div>
     );
   }
 }
